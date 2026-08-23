@@ -152,7 +152,7 @@ export default function VistaClases() {
   }
   return (
     <div className="p-4">
-      <table className="w-full table-fixed border-collapse border border-gray-300 text-center">
+      <table className="w-full table-fixed border-collapse border border-gray-300 text-center text-sm">
         <thead>
           <tr className="bg-gray-100">
             {dias.map((dia) => (
