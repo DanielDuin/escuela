@@ -167,14 +167,14 @@ export default function VistaClases() {
             {dias.map((dia) => (
               <td
                 key={dia}
-                className="w-1/5 border border-gray-300 px-4 py-2 align-top"
+                className="w-1/5 min-w-0 overflow-hidden  border border-gray-300 px-4 py-2 align-top"
               >
                 {clases
                   .filter((clase) => clase.dia === dia)
                   .map((clase, index) => (
                     <div
                       key={index}
-                      className={`mb-2 p-2 rounded-2xl ${devTipoGrupoColor(clase.tipo_grupo)}`}
+                      className={`mb-2 min-w-0 overflow-hidden whitespace-normal rounded-2xl p-2 ${devTipoGrupoColor(clase.tipo_grupo)}`}
                     >
                       {clase.hora_inicio} <br></br> {clase.nombre} <br></br> (
                       {devTipoGrupo(clase.tipo_grupo)})<br></br> [
