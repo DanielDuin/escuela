@@ -151,8 +151,8 @@ export default function VistaClases() {
     }
   }
   return (
-    <div className="p-4">
-      <table className="w-full table-fixed border-collapse border border-gray-300 text-center text-sm">
+    <div className="overflow-x-auto p-4">
+      <table className="min-w-[700px] table-auto border-collapse border border-gray-300 text-center text-sm">
         <thead>
           <tr className="bg-gray-100">
             {dias.map((dia) => (
@@ -167,14 +167,14 @@ export default function VistaClases() {
             {dias.map((dia) => (
               <td
                 key={dia}
-                className="w-1/5 min-w-0 overflow-hidden  border border-gray-300 px-4 py-2 align-top"
+                className="border border-gray-300 px-4 py-2 align-top"
               >
                 {clases
                   .filter((clase) => clase.dia === dia)
                   .map((clase, index) => (
                     <div
                       key={index}
-                      className={`mb-2 min-w-0 overflow-hidden whitespace-normal rounded-2xl p-2 ${devTipoGrupoColor(clase.tipo_grupo)}`}
+                      className={`mb-2 whitespace-nowrap rounded-2xl p-2 ${devTipoGrupoColor(clase.tipo_grupo)}`}
                     >
                       {clase.hora_inicio} <br></br> {clase.nombre} <br></br> (
                       {devTipoGrupo(clase.tipo_grupo)})<br></br> [
