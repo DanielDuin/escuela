@@ -100,14 +100,14 @@ export default function VistaClases() {
     {
       dia: "X",
       hora_inicio: "15:00",
-      nombre: "PERSONAL X4",
+      nombre: "PERSONALES",
       tipo_grupo: "D",
-      cantidad: "84",
+      cantidad: "4",
     },
     {
       dia: "X",
       hora_inicio: "16:00",
-      nombre: "PERSONAL X2",
+      nombre: "PERSONALES",
       tipo_grupo: "A",
       cantidad: "2",
     },
